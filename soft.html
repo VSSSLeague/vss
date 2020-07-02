@@ -31,7 +31,7 @@
 
 <body>
 
-      <!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->
   <header id="header" class="header-transparent">
     <div class="container">
 
@@ -44,11 +44,12 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#team">Team</a></li>
           
           <li class="menu-has-children"><a href="#">Game Information</a>
             <ul>
+              <li><a href="table.html">How the game works</a></li>
               <li><a href="score.html">Last Scores</a></li>
               <li><a href="portfolio.html">Media</a></li>
             </ul>
@@ -62,7 +63,7 @@
               <li><a href="tips.html">Competition Day</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -89,29 +90,50 @@
     <!-- ======= About Section ======= -->
     <section id="softia">
       <div class="container" data-aos="fade-up">
-        <center><h2>Artifical Intelligence</h2></center>
+        <center><h2>Artificial Intelligence</h2></center>
         <br>
         <div class="row softia-container">
 
           <div class="col-lg-6 content order-lg-1 order-2">
 
             <h3>Path Planning</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <p> Path Planning is computational problem to find a sequence of valid configurations that moves the object from the source to destination.</p>
             <br>
-            <h3>Decision Making</h3>
+            <h4>RRT</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              In essence, an RRT planner searches for a path froman initial state to a goal state by expanding a searchtree.
+              First, an extend function calculates a new state that can be reached from the target state by some incremental distance. If a collision with an obstacle in the 
+              environment would occur by moving to that new state, then a default value of type state is 
+              returned to capture the fact that there is no “successor” statedue to the obstacle. In general, any heuristic methods suitable for control of the robot can 
+              be used here. The heuristic just neet to detect when a state would hit the robot, however, the better the heuristic,the fewer nodes the planner will need to 
+              expand on average. Next, the algorithm provide an estimate of the time or distance that estimates how long 
+              repeated application would take to reach the goal. Finally, returns a state drawn uniformly from the state space of the environment. 
             </p>
-            <br>
             <br>
           </div>
 
           <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"></div>
         </div>
 
+        <h3>Decision Making</h3>
+            <p>
+              Decision Making (DM) is one of basic blocks of soccer robot navigation system. DM analyses  the  current  state  of  the  world  model  and  makes  decisions  about
+              new positions  of  robots. 
+              <h4>Behavior tree</h4>
+              BT is goal oriented. Each tree is assigned a goal, that will be achieved. The robot behavior is a control law that satisfies a set of constraints to 
+              achieve a particular goal. Each behavior is defined by the set of actions.
+              BTs perform a number of artificial  intelligence (AI) techniques such as Finite State Machines, Scheduling, Planning, and Action Execution.
+              A BT enables modularity, making states nested within each other and thus forming a tree-like structure, and restricting transitions to only these nested states.
+              The root node branches down to the tree until the leaf nodes are achieved.
+              BT replace th egrowing mess of state transitions of finite state machines (FSMs) with a more restrictive but also more structured traversal defining approach. 
+              Because of this, BTs easily define complex states. 
+            </p>
+            <br>
+            <br>  
+
       </div>
+              <br>
+              <br>
       </section>
 
       <section id="soft">
@@ -144,7 +166,7 @@
         </div>
         <br>
               <br>
-              <center>More information in <a href="https://github.com/IEEEVSS/VssWiki/wiki/">VSS Github</a></center>
+              <center>More information in <a href="#">VSS IA</a> and <a href="https://github.com/IEEEVSS/VssWiki/wiki/Filters-to-Vision-System">VSS Vision</a></center>
               <br>
               <br>
         </section>

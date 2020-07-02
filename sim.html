@@ -31,7 +31,7 @@
 
 <body>
 
-      <!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->
   <header id="header" class="header-transparent">
     <div class="container">
 
@@ -44,11 +44,12 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#team">Team</a></li>
           
           <li class="menu-has-children"><a href="#">Game Information</a>
             <ul>
+              <li><a href="table.html">How the game works</a></li>
               <li><a href="score.html">Last Scores</a></li>
               <li><a href="portfolio.html">Media</a></li>
             </ul>
@@ -62,7 +63,7 @@
               <li><a href="tips.html">Competition Day</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -93,23 +94,28 @@
         <br>
         <div class="row sim-container">
 
-          <div class="col-lg-6 content order-lg-1 order-2">
+          <div>
 
             <h3>FiraSIM</h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Based on gr-sim simulator, receive data from simulator is similar to receiving data from SSL-Vision using Google Protobuf library. 
+              Sending data to the simulator is also possible using Google Protobuf. Sample clients are included in clients folder. 
+              There are two clients available, qt-based and Java-based. The native client is compiled during the normal compilation.
+              The simulator compiles on Linux and MacOS. Simulador will run on dual core PC with 1GB of RAM and a simple graphic card.
+
+              <br>
+              <br>
+
+              <center>More information in <a href="https://github.com/IEEEVSS/FIRASim">VSS Simulator</a></center>
+              <img src="assets/img/portfolio/simulator.jpg">
             </p>
-
-            <br>
-            <br>
           </div>
-          
 
-          <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"></div>
+          <!-- <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"></div>-->
         </div>
 
-        <center>More information in <a href="https://github.com/IEEEVSS/FIRASim">VSS Github</a></center>
+        
             <br>
             <br>
 
