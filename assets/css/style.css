@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#header.header-transparent {
+#header.header-hometransparent {
   background: transparent;
 }
 
@@ -1186,7 +1186,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #343b40;
+  background: #343b49;
   padding: 30px 0;
   color: #fff;
   font-size: 14px;
