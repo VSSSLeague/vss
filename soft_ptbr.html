@@ -107,7 +107,7 @@
             <br>
             <h4>RRT</h4>
             <p>
-              Em essência, um planejador RRT procura por um caminho do estado inicial a um estado alvo espandindo a árvore de busca.
+              Em essência, um planejador RRT procura por um caminho do estado inicial a um estado alvo expandindo a árvore de busca.
               Primeiramente, uma função calcula um novo estado que pode ser alcançado a partir do estado inicial com algum incremento de distancias. Se uma colisão com algum obstaculo
               no ambiente puder ocorrer durante a movimentação para esse novo estado, então um valor padrão do tipo "state" é retornado para 
               identificar que não há um sucessor para aquele estado devido ao obstáculo. Em geral, qualquer método heurístico adequado ao controle de robôs 
@@ -159,8 +159,8 @@
 
               <h3>Filtro de Ruído</h3>
               <p>O filtro de ruído busca evitar "objetos fantasmas", o que pode acontecer durante a segmentação de cores. Este filtro
-                apresenta uma resistência a novos objetos, mantendo no mapa a mesma quandidade de objetos. Para implementar esse filtro
-                é posivel aplicar um timer, que verifica se o objeto continua a existir após uma janela de tempo. Outra abordagem é
+                apresenta uma resistência a novos objetos, mantendo no mapa a mesma quantidade de objetos. Para implementar esse filtro
+                é possível aplicar um timer, que verifica se o objeto continua a existir após uma janela de tempo. Outra abordagem é
                 usar um contador e todo frame que o objeto aparece um ponto é adicionado a confiança deste contador.
               </p>
 
